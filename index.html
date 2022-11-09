@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/Navbar.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Work+Sans:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <div class="nav">
+        <div class="nav__left">
+          <h1>Travel Go</h1>
+          <h4 id="more__travel">
+            More Travel <span><i class="fa fa-angle-down"></i></span>
+          </h4>
+          <div class="submenu">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-building fa-xs"></i>Hotels</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-plane fa-xs"></i>Flights</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-suitcase fa-xs"></i>Packages</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-car fa-xs"></i>Cars</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-home fa-xs"></i>Vacation Rental</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-ship fa-xs"></i>Cruises</a>
+              </li>
+
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">Travel Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="nav__right">
+          <h5>List Your Property</h5>
+          <h5>Support</h5>
+          <h5>Trips</h5>
+          <h5>Sign In</h5>
+        </div>
+      </div>
+
+      <!-- Banner -->
+      <div class="banner">
+        <img
+          src="https://wallpapercave.com/wp/CpGrNst.jpg"
+          alt=""
+          loading="lazy"
+        />
+        <div class="banner__search">
+          <ul>
+            <li class="first">Stays</li>
+            <li>Flights</li>
+            <li>Cars</li>
+            <li>Packeges</li>
+            <li>Things To do</li>
+            <li>Cruises</li>
+          </ul>
+          <div class="border"></div>
+
+          <div class="banner__searchInput">
+            <input type="text" placeholder="Going to" />
+
+            <div class="checkIn">
+              <i class="fa fa-calendar"></i>
+              <div class="date">
+                <p>check-in</p>
+                <p>Nov-23</p>
+              </div>
+            </div>
+
+            <div class="checkOut">
+              <i class="fa fa-calendar"></i>
+              <div class="date">
+                <p>check-out</p>
+                <p>Nov-24</p>
+              </div>
+            </div>
+
+            <div class="Travelers">
+              <i class="fa fa-user fa-lg"></i>
+              <div class="date">
+                <p>Travelers</p>
+                <p>1 room,2 Travelers</p>
+              </div>
+            </div>
+          </div>
+          <div class="checkbox__btn">
+            <input type="checkbox" class="addFlight" />
+            <label for="">Add a Flight</label>
+            <input type="checkbox" class="addCar" />
+            <label for="">Add a car</label>
+          </div>
+          <button>Search</button>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="main__offerCards">
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_TravelAsYouAre_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+            alt=""
+          />
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_Rewards_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+            alt=""
+          />
+          <img
+            src="https://forever.travel-assets.com/flex/flexmanager/images/2022/02/09/ORB_BrandPromise_InsiderPrices_imgB_840x473_20220207.jpg?impolicy=fcrop&w=900&h=386&q=mediumHigh"
+            alt=""
+          />
+        </div>
+
+        <!-- Featured Section -->
+        <div class="featured">
+          <h1>Featured Offers</h1>
+          <div class="featured__cardsCont">
+            <div class="featured__card">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_LastMinute_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
+                alt=""
+              />
+              <div class="featured__title">
+                <h2>Last Minute Delas</h2>
+                <p>Gateway Today</p>
+              </div>
+            </div>
+            <div class="featured__card">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_AllInclusive_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
+                alt=""
+              />
+              <div class="featured__title">
+                <h2>All Inclusive Resorts</h2>
+                <p>Enjoy Sun and Fun</p>
+              </div>
+            </div>
+            <div class="featured__card">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_MOD_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
+                alt=""
+              />
+              <div class="featured__title">
+                <h2>Insider Prices</h2>
+                <p>Member Get Rewarded</p>
+              </div>
+            </div>
+            <div class="featured__card">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/02/ORB_Storefront_JetAndReset_imgB_900x600_20211101.jpg?impolicy=fcrop&w=900&h=600&q=mediumHigh"
+                alt=""
+              />
+              <div class="featured__title">
+                <h2>Jet and Reset</h2>
+                <p>Fly somewhere beachy and warm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Advertise -->
+        <div class="addContainer">
+          <img
+            src="https://wallpaperim.net/_data/i/upload/2014/09/26/20140926528706-da51c1d0-la.jpg"
+            alt=""
+          />
+          <div>
+            <img
+              src="https://tpc.googlesyndication.com/simgad/16352503948591806513?"
+              alt=""
+            />
+            <h2>Make every day a NU adventure</h2>
+            <p>Pay now and save up to 15% *Terms apply</p>
+          </div>
+        </div>
+
+        <!-- Trip-Status -->
+        <div class="tripStatusCont">
+          <h1>Here to help keep you on the move</h1>
+          <div class="trip">
+            <div class="trip__status">
+              <h3>Change or Cancel A Trip</h3>
+              <p>Book or Cancel The Tickits</p>
+              <div><i class="fa fa-pencil"></i></div>
+            </div>
+
+            <div class="trip__status">
+              <h3>Use Credit or Coupen</h3>
+              <p>Apply coupen code Or Credit New Trip</p>
+              <div><i class="fa fa-dollar"></i></div>
+            </div>
+
+            <div class="trip__status">
+              <h3>Track your Refund</h3>
+              <p>Check the status of Refund currently in Progress</p>
+              <div><i class="fa fa-truck"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travelling Tips -->
+        <div class="tips__container">
+          <h1>Travelling Tips</h1>
+          <div class="tipsMain">
+            <div class="tips">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_NationalParks_imgB_1199x399_20211117.jpg"
+                alt=""
+              />
+              <div>
+                <h3>National Parks</h3>
+                <p>There's Plenty to Keep You Busy</p>
+                <button>Learn More</button>
+              </div>
+            </div>
+            <div class="tips">
+              <img
+                src="https://forever.travel-assets.com/flex/flexmanager/images/2021/11/18/ORB_Blog_RoadTrips_imgB_1199x399_20211117.jpg"
+                alt=""
+              />
+              <div>
+                <h3>The Perfect Road Trip</h3>
+                <p>Find Adventure for Every Season</p>
+                <button>Read On</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- advertise -->
+        <img
+          class="poster"
+          src="https://tpc.googlesyndication.com/simgad/10056509806482740393?"
+          alt=""
+        />
+
+        <!-- More Destinations -->
+        <div class="more__destination">
+          <h1>More Destination</h1>
+          <div class="moreCont">
+            <div>
+              <h3>Destination Deals</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div>
+              <h3>Top hotel beach destinations</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div>
+              <h3>Top hotel city destinations</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div>
+              <h3>Top vacation destinations</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div>
+              <h3>Top flight destinations</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div>
+              <h3>Top car rental destinations in America</h3>
+              <i class="fa fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footerSec">
+        <img
+          src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+          alt=""
+        />
+        <div>
+          <h4>Company</h4>
+          <p>About</p>
+          <p>Jobs</p>
+          <p>List Your Property</p>
+          <p>Partnerships</p>
+          <p>Newsroom</p>
+          <p>Investor relations</p>
+          <p>Site Map</p>
+          <p>Orbitx Rewards</p>
+          <p>Advertising</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <p>Hotels in India</p>
+          <p>Vacation Rentals in India</p>
+          <p>Car Rentals in India</p>
+          <p>Domestic Flights</p>
+          <p>Vacation Packages in India</p>
+          <p>Travel go Reviews</p>
+          <p>Orbitz Coupons</p>
+          <p>LGBTQ Travel</p>
+          <p>Travel Blog</p>
+        </div>
+        <div>
+          <h4>Policies</h4>
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+          <p>Vrbo terms and conditions</p>
+          <p>Orbitz Rewards Terms</p>
+          <p>Do not sell my personal information</p>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <p>Support</p>
+          <p>Cancel your hotel or vacation rental booking</p>
+          <p>Cancel your flight</p>
+          <p>Refund timelines, policies & processes</p>
+          <p>Use an Orbitz Coupon</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2022 Orbitz, LLC, an Expedia Group Company. All rights reserved.
+        </p>
+        <p>
+          Orbitz, Orbitz.com, and the Orbitz logo are trademarks or registered
+          trademarks of Orbitz, LLC. CST# 2083930-50.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/Navbar.js"></script>
