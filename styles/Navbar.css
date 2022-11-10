@@ -78,6 +78,16 @@
     font-weight: 500;
 }
 
-.nav__right>h5:hover {
+.nav__right>h5>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.nav__right>h5>a:hover {
     color: #00b1ff;
+}
+
+.username {
+    display: none;
 }

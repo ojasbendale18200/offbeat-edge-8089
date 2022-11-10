@@ -17,3 +17,23 @@ var showSubMenu = () => {
     submenuCounter++;
   }
 };
+
+var win= window.location.href
+var url =new URL(win)
+
+var params = new URLSearchParams(url.search)
+
+var username=params.get('username')
+
+var user= document.getElementById('username')
+
+
+if(username==null){
+  user.textContent="Sign Up"
+  user.style.display = "none"
+}else{
+  user.style.display = "block"
+  user.textContent= `Hello ${username}`
+
+  
+}
