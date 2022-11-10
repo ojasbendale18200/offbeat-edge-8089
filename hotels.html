@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Navbar.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/hotels.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+
+    <style>
+      .hotelsCont {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+      }
+
+      .searchBtn1 {
+        padding: 6px 40px;
+        font-size: 15px;
+        background-color: #c83259;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="nav">
+      <div class="nav__left">
+        <h1>Travel Go</h1>
+        <h4 id="more__travel">
+          More Travel <span><i class="fa fa-angle-down"></i></span>
+        </h4>
+        <div class="submenu">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-building fa-xs"></i>Hotels</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-plane fa-xs"></i>Flights</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-suitcase fa-xs"></i>Packages</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-car fa-xs"></i>Cars</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-home fa-xs"></i>Vacation Rental</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-ship fa-xs"></i>Cruises</a>
+            </li>
+
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Travel Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav__right">
+        <h5><a href="#">List Your Property</a></h5>
+        <h5><a href="#">Support</a></h5>
+        <h5><a href="#">Trips</a></h5>
+        <h5 id="username">Sign In</h5>
+        <h5 id="signout"><a href="signIn.html">Sign Up</a></h5>
+      </div>
+    </div>
+
+    <!-- SearchBar -->
+    <div class="banner__searchInput hotelsCont">
+      <input type="text" placeholder="Going to" />
+
+      <div class="checkIn">
+        <i class="fa fa-calendar"></i>
+        <div class="date">
+          <p>check-in</p>
+          <p>Nov-23</p>
+        </div>
+      </div>
+
+      <div class="checkOut">
+        <i class="fa fa-calendar"></i>
+        <div class="date">
+          <p>check-out</p>
+          <p>Nov-24</p>
+        </div>
+      </div>
+
+      <div class="Travelers">
+        <i class="fa fa-user fa-lg"></i>
+        <div class="date">
+          <p>Travelers</p>
+          <p>1 room,2 Travelers</p>
+        </div>
+      </div>
+      <button id="searchBtn" class="searchBtn1">Search</button>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="filter">
+        <hr />
+        <h3>Search by property name</h3>
+        <input type="text" id="property" placeholder="Hotel Name" />
+        <hr />
+        <h3>Filter by</h3>
+        <h4>Star Rating</h4>
+        <button>1<i class="fa fa-star"></i></button>
+        <button>2<i class="fa fa-star"></i></button>
+        <button>3<i class="fa fa-star"></i></button>
+        <button>4<i class="fa fa-star"></i></button>
+        <button>5<i class="fa fa-star"></i></button>
+        <br />
+        <div>
+          <h4>Your budget</h4>
+
+          <input type="checkbox" class="budget" id="b1" />
+          <label for="b1">less than $75</label><br />
+          <input type="checkbox" class="budget" id="b2" />
+          <label for="b2">$75 to $125</label><br />
+          <input type="checkbox" class="budget" id="b3" />
+          <label for="b3">$125 to $200</label><br />
+          <input type="checkbox" class="budget" id="b4" />
+          <label for="b4">$200 to $300</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Greater than $300</label>
+        </div>
+        <div>
+          <h4>Property type</h4>
+
+          <input type="checkbox" class="budget" id="b1" />
+          <label for="b1">Hotel</label><br />
+          <input type="checkbox" class="budget" id="b2" />
+          <label for="b2">Hotel resort</label><br />
+          <input type="checkbox" class="budget" id="b3" />
+          <label for="b3">villa</label><br />
+          <input type="checkbox" class="budget" id="b4" />
+          <label for="b4">Appartment</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Residence</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Condo</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Condominium resort</label>
+        </div>
+        <div>
+          <h4>Meal plans available</h4>
+
+          <input type="checkbox" class="budget" id="b1" />
+          <label for="b1">Breakfast included</label><br />
+          <input type="checkbox" class="budget" id="b2" />
+          <label for="b2">Lunch included</label><br />
+          <input type="checkbox" class="budget" id="b3" />
+          <label for="b3">Dinner included</label><br />
+          <input type="checkbox" class="budget" id="b4" />
+          <label for="b4">All inclusive</label><br />
+        </div>
+        <div>
+          <h4>Amenities</h4>
+
+          <input type="checkbox" class="budget" id="b1" />
+          <label for="b1">Ocean view</label><br />
+          <input type="checkbox" class="budget" id="b2" />
+          <label for="b2">Free airport shuttle</label><br />
+          <input type="checkbox" class="budget" id="b3" />
+          <label for="b3">Paerking</label><br />
+          <input type="checkbox" class="budget" id="b4" />
+          <label for="b4">Hot tub</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Free wifi</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Pool</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Air conditioner</label><br />
+          <input type="checkbox" class="budget" id="b1" />
+          <label for="b1">Spa</label><br />
+          <input type="checkbox" class="budget" id="b2" />
+          <label for="b2">Pet friendly</label><br />
+          <input type="checkbox" class="budget" id="b3" />
+          <label for="b3">Casino</label><br />
+          <input type="checkbox" class="budget" id="b4" />
+          <label for="b4">Water park</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Kitchen</label><br />
+          <input type="checkbox" class="budget" id="b5" />
+          <label for="b5">Washer and dryer</label><br />
+        </div>
+      </div>
+      <div class="hotelsContainer"></div>
+      <div class="add">
+        <img src="./images/ads.jpg" alt="" />
+        <img src="./images/ads2.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/Navbar.js"></script>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/hotels.js"></script>
