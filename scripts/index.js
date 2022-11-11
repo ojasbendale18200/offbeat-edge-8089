@@ -1,3 +1,6 @@
+
+
+
 let searchButton = document
 .querySelector('#searchBtn')
 .addEventListener('click', redirectToHotelPage);
