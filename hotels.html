@@ -110,8 +110,34 @@
       <button id="searchBtn" class="searchBtn1">Search</button>
     </div>
 
+    <div class="filterOptions">
+      <div class="list">
+        <div class="datalist">
+          <span>Filter by Rating</span>
+          <select id="filter" onchange="handleFilter()">
+            <option value="Recommended">Recommended</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+      </div>
+      <div class="list">
+        <div class="datalist">
+          <span>Sort by Price</span>
+          <select id="sort" onchange="handleSort()">
+            <option value="Recommended">Recommended</option>
+            <option value="Low to High">Low to High</option>
+            <option value="High to Low">High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
     <!-- Main -->
-    <div class="main">
+    <div class="HotelMain">
       <div class="filter">
         <hr />
         <h3>Search by property name</h3>

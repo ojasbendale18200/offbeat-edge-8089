@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/Navbar.css" />
+    <link rel="stylesheet" href="./styles/hotelDetails.css" />
+    <link rel="stylesheet" href="./styles/popup.css" />
+    <script
+      src="https://kit.fontawesome.com/21a2416134.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="nav">
+      <div class="nav__left">
+        <h1>Travel Go</h1>
+        <h4 id="more__travel">
+          More Travel <span><i class="fa fa-angle-down"></i></span>
+        </h4>
+        <div class="submenu">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-building fa-xs"></i>Hotels</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-plane fa-xs"></i>Flights</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-suitcase fa-xs"></i>Packages</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-car fa-xs"></i>Cars</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-home fa-xs"></i>Vacation Rental</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-ship fa-xs"></i>Cruises</a>
+            </li>
+
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Travel Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav__right">
+        <h5><a href="#">List Your Property</a></h5>
+        <h5><a href="#">Support</a></h5>
+        <h5><a href="#">Trips</a></h5>
+        <h5 id="username">Sign In</h5>
+        <h5 id="signout"><a href="signIn.html">Sign Up</a></h5>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="hotel__description">
+      <div id="images">
+        <div class="large-img">
+          <img
+            height="354"
+            width="615"
+            src="https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/ed573636.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div id="small_pic">
+            <div>
+              <img
+                src="https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/c6128ad5.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                src="https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/fdccf218.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div id="small_pic">
+            <div>
+              <img
+                src="https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/0c5cee25.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <img
+                src="https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/294f3b76.jpg?impolicy=fcrop&w=297&h=167&p=1&q=medium"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="options">
+        <div id="options_2">
+          <div>
+            <p class="currentP">Overview</p>
+          </div>
+
+          <div>
+            <p>Rooms</p>
+          </div>
+
+          <div>
+            <p>Location</p>
+          </div>
+
+          <div>
+            <p>Amenities</p>
+          </div>
+
+          <div>
+            <p>Policies</p>
+          </div>
+
+          <div>
+            <p>Reviews</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            
+              <button id="reserve_btn">Reserve a room</button>
+            
+          </div>
+        </div>
+      </div>
+      <div id="hor_line">
+        <hr />
+      </div>
+      <div id="unesco">
+        <div>
+          <button class="small_vip_btn">VIP Access</button>
+        </div>
+        <div>
+          <p>UNESCO Sustainable Property</p>
+        </div>
+      </div>
+      <div id="hotel_name">
+        <h1 id="hotelname"></h1>
+      </div>
+      <div id="star">
+        <div>
+          <i style="color: rgb(173, 165, 165)" class="fas fa-star"></i>
+        </div>
+        <div>
+          <i style="color: rgb(173, 165, 165)" class="fas fa-star"></i>
+        </div>
+        <div>
+          <i style="color: rgb(173, 165, 165)" class="fas fa-star"></i>
+        </div>
+        <div>
+          <i style="color: rgb(173, 165, 165)" class="fas fa-star"></i>
+        </div>
+        <div>
+          <i
+            style="color: rgb(173, 165, 165)"
+            class="fas fa-star"
+            class="color_star"
+          ></i>
+        </div>
+      </div>
+
+      <div id="reviews">
+        <div>
+          <h3></h3>
+          <p>Guests rated this property 4.7/5 for cleanliness.</p>
+        </div>
+
+        <div id="class_review">
+          <p class="class_review">703 reviews</p>
+        </div>
+      </div>
+
+      <div id="Popular">
+        <h3>Popular amenities</h3>
+      </div>
+      <div id="amenities">
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="http://cdn.onlinewebfonts.com/svg/img_129054.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">pool</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://img.icons8.com/ios/452/parking.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Parking included</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://cdn0.iconfinder.com/data/icons/hotel-service-2-2/100/line-09-512.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Spa</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="amenities">
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://w7.pngwing.com/pngs/957/839/png-transparent-wi-fi-symbol-wireless-computer-icons-wifi-computer-network-electronics-internet.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Wifi</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://cdn-icons-png.flaticon.com/512/91/91544.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Pet friendly</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxqbPzdtHxtsvd010fpzqcQvKanh3KGdVgtg&usqp=CAU"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Air conditioning</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3>Cleaning and safety practices</h3>
+      </div>
+
+      <div id="amenities">
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://library.kissclipart.com/20180909/wiq/kissclipart-cleaning-icon-clipart-cleaning-cleaner-maid-servic-77030f8ed3ebb2bd.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Cleaned with disinfectant</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="http://cdn.onlinewebfonts.com/svg/img_451220.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">48-hour vacancy between guest room stays</p>
+          </div>
+        </div>
+
+        <div id="pool">
+          <div>
+            <img
+              height="30"
+              width="30"
+              src="https://cdn.iconscout.com/icon/premium/png-256-thumb/hand-sanitizer-2219433-1857012.png"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <p class="shift">Hand sanitizer provided</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Model -->
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="pou">
+          <div class="yopayment">
+            <i> Your payment options</i>
+          </div>
+          <div class="shield">
+            <div class="ico">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="freecan">Free cancellation before Fri, Mar 13</div>
+            <div class="planchange">
+              You can change or cancel this stay if plans change. Because
+              flexibility matters.
+            </div>
+            <hr />
+          </div>
+          <div class="paynow">
+            <div class="conto">
+              <div class="paynowline">Pay now</div>
+              <div class="localcurr">
+                - We will process your payment in your local currncy
+              </div>
+            </div>
+            <div class="rightboxprice">
+              <div class="pricedollar">$96</div>
+              <div class="pernight">per night</div>
+              <div class="totalprice">$105 total</div>
+              <div class="incldfar">includes taxes and fare</div>
+
+              <button class="revv" id="book">Pay now</button>
+            </div>
+          </div>
+          <hr />
+          <div class="paynow">
+            <div class="conto secnd">
+              <div class="paynowline">Pay when you stay</div>
+              <div class="localcurr">
+                - You will not be charged until your stay
+              </div>
+              <div class="localcurr">
+                - Pay the property fdirectly in their local currncy
+              </div>
+            </div>
+            <div class="rightboxprice">
+              <div class="pricedollar secnd">$96</div>
+              <div class="pernight">per night</div>
+              <div class="totalprice">$105 total</div>
+              <div class="incldfar">includes taxes and fare</div>
+
+              <button class="revv prop" id="book">Pay at the property</button>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/hotelDetails.js"></script>
+<script src="./scripts/Navbar.js"></script>
+<script src="./scripts/popup.js"></script>
