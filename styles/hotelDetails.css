@@ -14,6 +14,7 @@ body {
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-top: 15px;
+    background-color: white;
 }
 
 #images {
@@ -505,4 +506,42 @@ body {
     gap: 50px;
     margin-bottom: 20px;
     color: #999999;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+
+    /* Here Write all the necessery styles for Medium Screen size  */
+    #pool>div>img {
+        height: 15px;
+        width: 15px;
+    }
+
+    #pool>div>div>p {
+        font-size: 5px;
+    }
+
+    .paynow {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 700px) {
+
+    /* Here Write all the necessery styles for Small Screen size  */
+    #pool>div>img {
+        height: 15px;
+        width: 15px;
+    }
+
+    #pool>div>div>p {
+        font-size: 5px;
+    }
+
+    .paynow {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }

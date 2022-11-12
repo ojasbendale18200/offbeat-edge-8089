@@ -14,6 +14,11 @@
     margin-left: 150px;
 }
 
+.nav__left>a {
+    text-decoration: none;
+    color: white;
+}
+
 .nav__left>h1 {
     padding-left: 20px;
     cursor: pointer;

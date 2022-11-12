@@ -7,8 +7,9 @@ var hotelName = params.get("name");
 var hotelPrice = params.get("price");
 var hotelRating = params.get("rating");
 var hotelPernight = params.get("pernight");
+var hotelDesc = params.get("desc")
+var username=params.get('username')
 
-console.log(hotelPrice,hotelRating);
 
 let names = document.querySelector("#hotelname")
 names.innerText =  hotelName
@@ -20,4 +21,7 @@ let perNight = document.querySelector(".pricedollar")
 perNight.innerText = hotelPernight
 
 let total = document.querySelector(".totalprice")
-total.innerText = `$${hotelPrice}`
+total.innerText = `$${hotelPrice} Total`
+
+
+

@@ -23,6 +23,23 @@
    }
  }
 
+ var win = window.location.href;
+var url = new URL(win);
+
+var params = new URLSearchParams(url.search);
+
+var hotelName = params.get("name");
+var hotelPrice = params.get("price");
+var hotelRating = params.get("rating");
+var hotelPernight = params.get("pernight");
+var hotelDesc = params.get("desc")
+var username=params.get('username')
+
+
+
  let payNow = document.querySelector("#book").addEventListener("click",() => {
-    window.location.assign(`payment.html`)
+  let url = "payment.html"
+    window.location.href = `${url}?name=${hotelName}&total=${hotelPrice}&rating=${hotelRating}&pernight=${hotelPernight}&desc=${hotelDesc}&username=${username}`
  })
+
+ console.log(hotelPrice)

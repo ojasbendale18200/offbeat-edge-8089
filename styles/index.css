@@ -190,6 +190,7 @@ body {
     display: flex;
     align-items: center;
     border: 1px solid gray;
+    background-color: white;
 }
 
 .addContainer>img {
@@ -225,6 +226,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px 20px;
     border: 1px solid rgb(180, 178, 178);
+    background-color: white;
 
 }
 
@@ -308,6 +310,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
+    background-color: white;
 }
 
 .moreCont>div>h3 {

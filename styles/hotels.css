@@ -3,6 +3,22 @@ body {
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hotelsCont {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.searchBtn1 {
+    padding: 6px 40px;
+    font-size: 15px;
+    background-color: #c83259;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 .HotelMain {
     display: flex;
     width: 90%;
@@ -48,6 +64,7 @@ body {
     margin: 2px 1px;
     border-radius: 10px;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 .filter>button:hover {
@@ -138,7 +155,8 @@ body {
     margin: auto;
     height: 190px;
     background-color: white;
-    margin: 20px 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
 
 }
 
