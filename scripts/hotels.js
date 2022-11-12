@@ -4,7 +4,9 @@ var url = new URL(win);
 var params = new URLSearchParams(url.search);
 
 var search = params.get("search");
-console.log(search);
+var username=params.get('username')
+console.log(username);
+
 
 
 let hotels = [
@@ -153,12 +155,14 @@ function handleFilter() {
     displayHotel(filterData)
 }
 
+
+
 // HotelDetails
 function hotelDetails(id) {
     var data = hotels[id];
     console.log(data)
     var url = 'hotelDetails.html';
-    window.location.href = `${url}?name=${data.title}&price=${data.total}&rating=${data.star}&pernight=${data.price}`;
+    window.location.href = `${url}?name=${data.title}&price=${data.total}&rating=${data.star}&pernight=${data.price}&desc=${data.description}&username=${username}`;
 }
 
 
